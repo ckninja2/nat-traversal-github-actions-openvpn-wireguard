@@ -32,6 +32,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: ifconfig
+        run: ifconfig
+
       # Execute this job only if the commit message starts with "WG: " string.
       # GitHub actions workflow does not have any native way to run job only for
       # specific commit messages.
